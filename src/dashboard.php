@@ -32,6 +32,7 @@
                     <button type=\"button\" class=\"btn btn-outline-danger\">Remove</button>";
                 echo "</tr>";
             }
+            echo $_SERVER["PHP_SELF"];
             ?>
         </tbody>
     </body>
@@ -39,5 +40,5 @@
 </html>
 
 <script>
-    
+
 </script>
