@@ -1,6 +1,8 @@
 <?php 
+
 include './src/header.php';
 include './src/validation.php';
+
 ?>
 
 <body id="body" class="container">
@@ -8,6 +10,7 @@ include './src/validation.php';
   <div class="container text-center">
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
     <div class="row">
+      <input for="unique_id" id = "unique_id" name="unique_id">
       <div class="col-5">
           <label for="last_name" class="form-label"> Last Name: </label>
         </div>
@@ -77,9 +80,3 @@ include './src/validation.php';
 </footer>
 
 </html>
-
-
-<script>
-
-
-</script>
