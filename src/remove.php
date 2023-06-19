@@ -12,8 +12,7 @@ if (isset($_POST["id"])){
 }
 
 // sql to delete a record
-// $sql = "DELETE FROM Contact WHERE id = " . $user_id;
-$sql = "DELETE FROM Contact WHERE id = 1";
+$sql = "DELETE FROM Contact WHERE id = " . $user_id;
 
 if (mysqli_query($conn, $sql)) {
   $status = 1;

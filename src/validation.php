@@ -55,10 +55,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     $validation = TRUE;
-} 
+}
 
 if (!$validation == FALSE) {
-
-    header ('Location: ./src/create.php');
+    
+    if($_POST["create"] == "create"){
+        header ('Location: ./src/create.php');
+    } else if ($_POST["update"] == "update"){
+        header ('Location: ./update.php');
+    }
 }
 ?>
