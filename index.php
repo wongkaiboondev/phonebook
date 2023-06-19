@@ -10,7 +10,6 @@ include './src/validation.php';
   <div class="container text-center">
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
     <div class="row">
-      <input for="unique_id" id = "unique_id" name="unique_id">
       <div class="col-5">
           <label for="last_name" class="form-label"> Last Name: </label>
         </div>
@@ -44,7 +43,7 @@ include './src/validation.php';
           <label for="phone_number"> Phone Number: </label>
         </div>
         <div class="col-7">
-          <input type="text" class="form-control" id="phone_number" name="phone_number" placeholder="Exp: 0123456789">
+          <input type="text" class="form-control" class="phone_number" name="phone_number" placeholder="Exp: 0123456789">
           <?php if(!empty($phone_number_msg)) {
             echo "<div class=\"alert alert-danger\">". $phone_number_msg ."</div>";
           }
@@ -76,7 +75,7 @@ include './src/validation.php';
       <input id = "submit_btn" class="btn btn-secondary" type="Submit" value="Submit">
     </form>
   </body>
-<footer>
-</footer>
 
-</html>
+<?php 
+  include './src/footer.php'; 
+?>

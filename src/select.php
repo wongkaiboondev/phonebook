@@ -6,6 +6,7 @@ $sql = "
 SELECT a.id, a.last_name, a.first_name, a.number as phone_number, b.description as phone_type FROM Contact a 
 left join phone_type b
 on b.type = a.phone_type
+order by a.last_name asc
 ";
 
 $result = mysqli_query($conn, $sql);
