@@ -6,7 +6,7 @@ include './src/validation.php';
 ?>
 
 <body id="body" class="container">
-  <h3> Create New Contact </h3>
+  <h3 class="title"> Create New Contact </h3>
   <div class="container text-center">
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
     <div class="row">

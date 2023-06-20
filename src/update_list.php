@@ -3,10 +3,14 @@
 include './header.php';
 include './validation.php';
 
+if(isset($_SESSION['first_name']) == "" OR isset($_SESSION['last_name']) == "" OR isset($_SESSION['phone_number']) == "" OR isset($_SESSION['phone_type']) == ""){
+    header ('Location: ./dashboard.php');
+}
+
 ?>
 
 <body id="body" class="container">
-  <h3> Update Contact </h3>
+  <h3 class="title"> Update Contact </h3>
   <div class="container text-center">
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
     <div class="row">

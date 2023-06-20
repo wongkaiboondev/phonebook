@@ -16,12 +16,11 @@ $sql = "DELETE FROM Contact WHERE id = " . $user_id;
 
 if (mysqli_query($conn, $sql)) {
   $status = 1;
-  return $status;
+  echo $status;
 
 } else {
   $status = 0;
-  return $status;
-
+  echo $status;
 }
 
 mysqli_close($conn);

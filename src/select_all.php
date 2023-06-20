@@ -22,7 +22,6 @@ if(mysqli_num_rows($result) > 0) {
         $data[$counter]['phone_number'] = $row["phone_number"];
         $data[$counter]['phone_type'] = $row["phone_type"];
         $data[$counter]['unique_id'] = base64_encode($row["first_name"].$row["last_name"]."-".$row["id"]);
-        // $i[$data] = $row["first_name"]. " " .$row["last_name"]. " " .$row["phone_number"]. " ".$row["phone_type"]. "<br><br>";
         $counter++;
     }
 }

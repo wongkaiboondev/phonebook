@@ -2,7 +2,7 @@
 
 echo "
 </html>
-<footer class = \"pb-footer text-center\" style=\"bottom: 10px\">
+<footer class = \"pb-footer text-center\">
 	<p>Copyright &copy; 2023 Phone Book.</p>
 </footer>
 

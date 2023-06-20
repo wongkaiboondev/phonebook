@@ -35,11 +35,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($_POST["phone_number"])) {
         $phone_number_msg = "Please fill in your phone number";
     } else {
-        $phone_number = (int)filter($_POST["phone_number"]);
-        
-        if (!filter_var($phone_number, FILTER_VALIDATE_INT) === FALSE) {
-            $_SESSION["phone_number"] = $phone_number;
+        $phone_number = filter($_POST["phone_number"]);
 
+
+        if (!filter_var((int)filter($_POST["phone_number"]), FILTER_VALIDATE_INT) === FALSE) {
+            $_SESSION["phone_number"] = $phone_number;
         } else {
 
             $phone_number_msg = "Fill your phone number in this format. Exp: 0123456789 ";
